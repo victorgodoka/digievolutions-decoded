@@ -1,0 +1,101 @@
+@import './default.css';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url('./imgs/background.jpg') center center no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.select-box {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+}
+
+.select,
+.label {
+  color: #414141;
+  display: block;
+  font: 400 17px/2em 'Source Sans Pro', sans-serif;
+}
+
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5px 0;
+  height: 40px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  font-family: 'Teko',
+  sans-serif;
+  border: 0 none;
+  font-size: 1.555rem;
+}
+
+.select-box1 {
+  background: #ececec;
+}
+
+.label {
+  position: relative;
+  padding: 5px 10px;
+  font-family: 'Teko',
+  sans-serif;
+  cursor: pointer;
+  font-size: 1.555rem;
+}
+
+.open .label::after {
+  content: "▲";
+}
+
+.label::after {
+  content: "▼";
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 15px;
+  border-left: 5px solid #fff;
+}
+
+.digimon {
+  padding: 0 10px;
+  background: #ececec;
+  color: #141414;
+  max-height: calc(100vh - 120px);
+  overflow: auto;
+  line-height: 2;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.555rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.digimon__data {
+  display: flex;
+  align-items: center;
+  padding: 5px 2px;
+}
+
+.digimon__name {
+  margin-left: 5px;
+}
+
+.digimon__image {
+  height: 28px;
+}
